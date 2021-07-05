@@ -1,0 +1,20 @@
+.game-card {
+    @apply w-48;
+}
+
+.game-card-thumbnail {
+    @apply h-52 rounded-2xl mb-1 shadow-xl cursor-pointer;
+
+    background-image: url( https://files.facepunch.com/garry/5f45259e-82f6-4f03-90e0-52e16b38b0cc.png );
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.game-card-thumbnail:hover {
+    transition: padding 0.1s ease-out;
+
+    border: 3px solid #0094ffaa;
+    box-shadow: 0px 0px 30px #0094ff22;
+    opacity: 1;
+}

@@ -1,9 +1,12 @@
+import "./games.css"
+
 function GamesPage(){
     return (
         <div>
-            <h1>Games!</h1>
-
-            hell yeah
+            <div className="game-card">
+                <div className="game-card-thumbnail"></div>
+                <h1 className="text-center">Game Name</h1>
+            </div>
         </div>
     )
 }
