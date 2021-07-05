@@ -1,8 +1,10 @@
 function GamesPage(){
     return (
-    <div>
+        <div>
+            <h1>Games!</h1>
 
-    </div>
+            hell yeah
+        </div>
     )
 }
 
