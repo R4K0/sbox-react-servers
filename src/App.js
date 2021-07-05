@@ -15,7 +15,7 @@ function App() {
 
         <content>
           <Switch>
-            <Route path="/"></Route>
+            <Route path="/" exact></Route>
             <Route path="/games" component={GamesPage}></Route>
             <Route path="/orgs"></Route>
           </Switch>
