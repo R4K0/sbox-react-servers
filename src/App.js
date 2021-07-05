@@ -7,7 +7,7 @@ function App() {
   return (
     <Router>
       <div>
-        <div className="pb-8">
+        <div className="header pb-8">
           <h1 className="text-white font-bold text-3xl drop-shadow-2xl inline-block">s&box servers</h1>
           <text className="text-white text-sm font-normal pl-2">there are 0 players playing on 0 servers in total</text>
           <Navbar></Navbar>
