@@ -5,3 +5,17 @@
 body {
     @apply bg-gradient-to-r from-gray-900 to-gray-800 w-full h-full p-10 text-white;
 }
+
+.loading {
+    @apply text-7xl w-max opacity-25 text-center;
+}
+
+.badge {
+    transition: background-color 0.25s ease-out;
+
+    @apply text-white text-xs bg-blue-600 hover:bg-blue-800 cursor-pointer w-max py-0.5 px-2 rounded-full inline-block;
+}
+
+.badge:not(:last-child) {
+    @apply mr-2
+}

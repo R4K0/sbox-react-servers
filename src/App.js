@@ -2,6 +2,7 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import './App.css';
 import Navbar from './Components/navbar';
 import GamesPage from './Pages/games';
+import InspectGame from './Pages/inspect_game';
 
 function App() {
   return (
@@ -16,7 +17,8 @@ function App() {
         <content>
           <Switch>
             <Route path="/" exact></Route>
-            <Route path="/games" component={GamesPage}></Route>
+            <Route path="/games" component={GamesPage} exact></Route>
+            <Route path="/games/:indent" component={InspectGame}></Route>
             <Route path="/orgs"></Route>
           </Switch>
         </content>

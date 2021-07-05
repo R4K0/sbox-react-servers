@@ -4,7 +4,6 @@ import "./games.css"
 
 
 function GamesPage(){
-
     const [games, setGames] = useState(null)
     const [isLoading, setLoading] = useState(false)
 
@@ -18,9 +17,11 @@ function GamesPage(){
         })
         .then(res => res.json())
         .then(res => {
+            console.log(res);
+
             setGames( res.assets.map( asset => {
                 return (
-                    <GameCard title={asset.title} thumbnail={asset.thumb} updated={asset.updated}></GameCard>
+                    <GameCard title={asset.title} thumbnail={asset.thumb} updated={asset.updated} ident={asset.org.ident+"."+asset.ident} key={asset.ident}></GameCard>
                 )
             }) )
         }, err => {
@@ -31,8 +32,8 @@ function GamesPage(){
     }, [])
 
     return (
-        <div className="grid md:grid-cols-3 lg:grid-cols-5 2xl:grid-cols-9 gap-y-4">
-            { !isLoading && games ? games : <div className="text-7xl w-max opacity-25 text-center">loading games</div> }
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 2xl:grid-cols-9 gap-y-4">
+            { !isLoading && games ? games : <div className="loading">loading games</div> }
         </div>
     )
 }
