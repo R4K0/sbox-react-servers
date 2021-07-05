@@ -1,7 +1,9 @@
 function GamesPage(){
-    return <div>
+    return (
+    <div>
 
     </div>
+    )
 }
 
 export default GamesPage;
