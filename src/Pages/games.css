@@ -12,9 +12,9 @@
 }
 
 .game-card-thumbnail:hover {
-    transition: padding 0.1s ease-out;
+    transition: box-shadow 0.2s ease-out;
 
     border: 3px solid #0094ffaa;
-    box-shadow: 0px 0px 30px #0094ff22;
+    box-shadow: 0px 0px 30px #0095ff7a;
     opacity: 1;
 }
