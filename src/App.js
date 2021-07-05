@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import './App.css';
 import Navbar from './Components/navbar';
+import GamesPage from './Pages/games';
 
 function App() {
   return (
@@ -15,7 +16,7 @@ function App() {
         <content>
           <Switch>
             <Route path="/"></Route>
-            <Route path="/games"></Route>
+            <Route path="/games" component={GamesPage}></Route>
             <Route path="/orgs"></Route>
           </Switch>
         </content>
