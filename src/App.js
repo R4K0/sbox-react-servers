@@ -1,23 +1,13 @@
-import logo from './logo.svg';
 import './App.css';
+import Navbar from './Components/navbar';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <h1 className="text-white font-bold text-3xl drop-shadow-2xl inline-block">s&box servers</h1>
+      <text className="text-white text-sm font-normal pl-2">there are 0 players playing on 0 servers in total</text>
+
+      <Navbar></Navbar>
     </div>
   );
 }
