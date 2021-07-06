@@ -33,12 +33,12 @@ function InspectGame(){
     return (
         <div className="max-w-4xl bg-gray-800 rounded-3xl p-4">
             <div className="flex">
-                <div className="min-w-32 max-w-32 relative place-self-center mr-4 mb-4" style={{aspectRatio: 1/1}}>
-                    <img src={asset.thumb} className="w-32 rounded-xl"></img>
+                <div className="max-w-32 max-h-32 relative place-self-center mr-4 mb-4" style={{aspectRatio: 1/1}}>
+                    <img src={asset.thumb} className="max-h-32 rounded-xl"></img>
                     <img src={asset.org.thumb} className="w-8 absolute rounded-xl bottom-1 right-1"></img>
                 </div>
 
-                <span className="inline-blockalign-middle">
+                <span className="inline-blockalign-middle max-h-32">
                     <p className="text-3xl">Game information about {asset.title}</p>
                     <p className="text-xl mb-1">A game made by {asset.org.title}</p>
 
