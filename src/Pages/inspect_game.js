@@ -45,7 +45,7 @@ function InspectGame(){
                     <div className="self-stretch">
                         <p className="badge">Updated {howLongAgo}</p>
                         {
-                            asset.download?.type ? <a className="badge" href={asset.download.url}>Project Link</a> : null
+                            asset.download?.type ? <a className="badge" href={asset.download.url}>Download</a> : null
                         }
                     </div>
                 </span>
